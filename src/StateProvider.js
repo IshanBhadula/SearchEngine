@@ -1,14 +1,16 @@
-import React, {createContext,useContext,useReducer} from 'react';
+import React, {createContext, useContext, useReducer} from "react";
 
-//Preparing the datat layer
+//Preparing the data layer
 export const StateContext = createContext(); 
 
 //A higher order component , here childern is App
 // initail State is what app looked like in the beginning
 //reducer is which listen to the changes 
-export const StateProvider = ({reducer,initialState,childern}) =>(
-<StateContext.Provider value = {useReducer(reducer,
-    initialState)}>{childern}
+
+export const StateProvider = ({reducer ,initialState ,children
+}) =>(
+<StateContext.Provider value = {useReducer(reducer,initialState)}>
+        {children}
 </StateContext.Provider>
 );
 
