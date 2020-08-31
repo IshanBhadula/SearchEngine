@@ -25,7 +25,7 @@ function Home() {
       <div className="home__body">
         <img src={require("../images/google-logo.jpg")} alt="Error" />
         <div className="home__inputContainer">
-         <Search hideButtons/>
+         <Search />
         </div>
       </div>
     </div>

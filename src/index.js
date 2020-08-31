@@ -9,6 +9,7 @@ import reducer, {initialState} from "./reducer";
 
 ReactDOM.render(
   <React.StrictMode>
+     {/* here StateProvider is wrapped around App to provide datalayer functionality */}
     <StateProvider initialState={initialState} reducer = {reducer}>
     
     <App />
